@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth bg-[#09090A]">
+<html lang="ru" class="scroll-smooth bg-[#0C0A0F]">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GG2 // OTC & Escrow Hub</title>
+  <title>Flawless Market // Grow a Garden 2</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,329 +15,193 @@
     @media (min-width: 640px) { .pinterest-grid { column-count: 2; } }
     @media (min-width: 1024px) { .pinterest-grid { column-count: 3; } }
     .review-card { break-inside: avoid; margin-bottom: 1.5rem; }
+    /* Игровые неоновые свечения по бокам для атмосферы */
+    .game-glow-left { background: radial-gradient(circle, rgba(217,70,239,0.08) 0%, rgba(0,0,0,0) 70%); }
+    .game-glow-right { background: radial-gradient(circle, rgba(34,197,94,0.06) 0%, rgba(0,0,0,0) 70%); }
   </style>
 </head>
-<body class="bg-[#09090A] text-[#E4E4E7] antialiased selection:bg-emerald-500 selection:text-black">
+<body class="bg-[#0C0A0F] text-[#E4E4E7] antialiased selection:bg-fuchsia-500 selection:text-white relative overflow-x-hidden">
 
-  <nav class="fixed top-0 w-full z-50 bg-[#09090A]/70 apple-blur border-b border-white/[0.04]">
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] game-glow-left pointer-events-none"></div>
+  <div class="absolute top-[600px] right-0 w-[600px] h-[600px] game-glow-right pointer-events-none"></div>
+
+  <nav class="fixed top-0 w-full z-50 bg-[#0C0A0F]/80 apple-blur border-b border-white/[0.04]">
     <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
       <div class="flex items-center gap-3">
-        <span class="text-white font-bold tracking-tight text-sm uppercase">GG2 // ESCROW</span>
-        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_8px_#10b981]"></span>
+        <span class="text-white font-black tracking-wider text-sm uppercase">FLAWLESS <span class="text-fuchsia-500">MARKET</span></span>
+        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_10px_#10b981]"></span>
       </div>
       <div class="hidden md:flex gap-8 text-xs font-medium text-zinc-400 tracking-wide">
-        <a href="#network" class="hover:text-white transition-colors">Сеть арбитров</a>
-        <a href="#market" class="hover:text-white transition-colors">Ассортимент</a>
-        <a href="#escrow-rules" class="hover:text-white transition-colors">Безопасность</a>
-        <a href="#reviews" class="hover:text-white transition-colors">Верифицированные отзывы</a>
+        <a href="#garants" class="hover:text-white transition-colors">Гаранты в сети</a>
+        <a href="#catalog" class="hover:text-white transition-colors">Каталог вещей</a>
+        <a href="#how-it-works" class="hover:text-white transition-colors">Как купить</a>
+        <a href="#reviews" class="hover:text-white transition-colors">База отзывов</a>
       </div>
-      <a href="https://t.me/affow" class="bg-white text-black text-[11px] font-semibold px-4 py-2 rounded-full hover:bg-zinc-200 transition-all active:scale-95">
-        Связаться
+      <a href="https://t.me/gag2store" class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white text-[11px] font-bold px-5 py-2 rounded-full transition-all active:scale-95 shadow-[0_0_15px_rgba(217,70,239,0.3)]">
+        Наш канал
       </a>
     </div>
   </nav>
 
   <header class="relative pt-40 pb-24 px-6 max-w-4xl mx-auto text-center">
-    <div class="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] px-3 py-1 rounded-full text-[11px] font-medium text-zinc-400 tracking-wider uppercase mb-6">
-      Grow a Garden 2 • OTC Platform
+    <div class="inline-flex items-center gap-2 bg-fuchsia-500/10 border border-fuchsia-500/20 px-4 py-1.5 rounded-full text-[11px] font-bold text-fuchsia-400 tracking-wider uppercase mb-6">
+      🔒 ПЛОЩАДКА ДЛЯ БЕЗОПАСНЫХ СДЕЛОК • GROW A GARDEN 2
     </div>
-    <h1 class="text-white text-4xl sm:text-6xl font-black tracking-tight leading-[1.15] mb-6">
-      Экосистема безопасного обмена и ценностей.
+    <h1 class="text-white text-4xl sm:text-6xl font-black tracking-tight leading-[1.1] mb-6">
+      Покупай шекели, редких петов и семена без риска кидалова.
     </h1>
-    <p class="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed mb-10">
-      Официальный верифицированный хаб для проведения сделок, покупки внутриигровых ресурсов, семян и геймпассов за Telegram Stars под руководством <span class="text-white font-medium">@affow</span>.
+    <p class="text-zinc-400 text-base sm:text-lg max-w-xl mx-auto font-light leading-relaxed mb-10">
+      Топ маркет во второй части игры. Все продажи полностью автоматизированы и проходят через официальную сетку гарантов под руководством <span class="text-white font-medium">@affow</span>.
     </p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="https://t.me/affow" class="bg-white text-black text-xs font-semibold px-8 py-4 rounded-xl hover:bg-zinc-200 transition-all shadow-sm">
-        Открыть сделку через @affow
+      <a href="https://t.me/gag2store" class="bg-white text-black text-xs font-bold px-8 py-4 rounded-xl hover:bg-zinc-200 transition-all active:scale-95">
+        Открыть сделку / Купить
       </a>
-      <a href="#market" class="bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.06] text-white text-xs font-semibold px-8 py-4 rounded-xl transition-all">
-        Посмотреть каталог ценностей
+      <a href="#catalog" class="bg-white/[0.03] border border-white/[0.08] hover:border-fuchsia-500/40 text-white text-xs font-semibold px-8 py-4 rounded-xl transition-all">
+        Посмотреть весь список вещей
       </a>
     </div>
   </header>
 
-  <section id="network" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
+  <section id="garants" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
     <div class="mb-12">
-      <p class="text-emerald-500 text-[11px] font-bold tracking-widest uppercase mb-2">Institutional Network</p>
-      <h2 class="text-white text-2xl sm:text-3xl font-bold tracking-tight">Статус пула активных арбитров</h2>
+      <p class="text-fuchsia-500 text-[11px] font-bold tracking-widest uppercase mb-2">Flawless Team</p>
+      <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Администрация онлайн // Проверенные гаранты</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 relative overflow-hidden">
+      <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 relative hover:border-fuchsia-500/20 transition-all">
         <div class="flex justify-between items-start mb-6">
           <div>
-            <h3 class="text-white font-bold text-lg">@affow</h3>
-            <p class="text-zinc-500 text-xs mt-0.5">Founder / Главный арбитр</p>
+            <h3 class="text-white font-black text-lg tracking-wide">@affow</h3>
+            <p class="text-zinc-500 text-xs mt-0.5">Создатель маркера / Главный гарант</p>
           </div>
           <span class="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold text-emerald-400 uppercase tracking-wide">
-            <span class="w-1 h-1 bg-emerald-500 rounded-full animate-pulse"></span> В сети
+            <span class="w-1 h-1 bg-emerald-500 rounded-full animate-pulse"></span> ONLINE
           </span>
         </div>
         <p class="text-zinc-400 text-xs leading-relaxed font-light mb-4">
-          Проведение сделок любого масштаба. Полный контроль Escrow-депозитария платформы. Среднее время ответа: менее 3 минут.
+          Проводит самые крупные сделки в сообществе. Отвечает моментально, полностью контролирует выдачу товаров.
         </p>
-        <div class="text-[11px] text-zinc-500 font-mono border-t border-white/[0.04] pt-3">ID Узла: #01_MAIN_NODE</div>
+        <div class="text-[11px] text-zinc-600 font-mono border-t border-white/[0.04] pt-3">ID Администратора: #1044</div>
       </div>
 
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 relative overflow-hidden">
+      <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 relative hover:border-fuchsia-500/20 transition-all">
         <div class="flex justify-between items-start mb-6">
           <div>
-            <h3 class="text-white font-bold text-lg">[Юзернейм партнёра]</h3>
-            <p class="text-zinc-500 text-xs mt-0.5">Верифицированный партнёр</p>
+            <h3 class="text-white font-black text-lg tracking-wide">[Юзернейм партнёра]</h3>
+            <p class="text-zinc-500 text-xs mt-0.5">Проверенный со-гарант</p>
           </div>
           <span class="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold text-emerald-400 uppercase tracking-wide">
-            <span class="w-1 h-1 bg-emerald-500 rounded-full animate-pulse"></span> В сети
+            <span class="w-1 h-1 bg-emerald-500 rounded-full animate-pulse"></span> ONLINE
           </span>
         </div>
         <p class="text-zinc-400 text-xs leading-relaxed font-light mb-4">
-          Авторизованный со-гарант экосистемы. Имеет полные права на депонирование средств и проведение торговых сессий.
+          Официальный представитель сетки Flawless. Авторизован для быстрого приема оплаты в Stars и выдачи игровых предметов.
         </p>
-        <div class="text-[11px] text-zinc-500 font-mono border-t border-white/[0.04] pt-3">ID Узла: #02_PARTNER_NODE</div>
+        <div class="text-[11px] text-zinc-600 font-mono border-t border-white/[0.04] pt-3">ID Администратора: #1082</div>
       </div>
 
-      <div class="bg-white/[0.01] border border-white/[0.04] rounded-2xl p-6 relative overflow-hidden opacity-70">
+      <div class="bg-white/[0.01] border border-white/[0.03] rounded-2xl p-6 opacity-60">
         <div class="flex justify-between items-start mb-6">
           <div>
-            <h3 class="text-zinc-400 font-bold text-lg">System Backup Node</h3>
-            <p class="text-zinc-600 text-xs mt-0.5">Автоматический шлюз</p>
+            <h3 class="text-zinc-400 font-black text-lg tracking-wide">System Backup Node</h3>
+            <p class="text-zinc-600 text-xs mt-0.5">Резервный системный узел</p>
           </div>
           <span class="inline-flex items-center gap-1.5 bg-zinc-500/10 border border-zinc-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold text-zinc-400 uppercase tracking-wide">
-            Резерв
+            РЕЗЕРВ
           </span>
         </div>
         <p class="text-zinc-500 text-xs leading-relaxed font-light mb-4">
-          Резервный системный узел маршрутизации сделок. Активируется автоматически при перегрузке основных каналов связи связи.
+          Автоматический шлюз распределения трафика. Подключается, когда менеджеры заняты на крупных объемах обмена.
         </p>
-        <div class="text-[11px] text-zinc-600 font-mono border-t border-white/[0.04] pt-3">ID Узла: #03_ROUTING_BACKUP</div>
+        <div class="text-[11px] text-zinc-700 font-mono border-t border-white/[0.04] pt-3">ID: #RESERVE-77</div>
       </div>
     </div>
   </section>
 
-  <section id="market" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
+  <section id="catalog" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
     <div class="mb-12">
-      <p class="text-zinc-500 text-[11px] font-bold tracking-widest uppercase mb-2">Available Assets</p>
-      <h2 class="text-white text-2xl sm:text-3xl font-bold tracking-tight">Каталог внутриигровых ценностей</h2>
+      <p class="text-emerald-500 text-[11px] font-bold tracking-widest uppercase mb-2">GG2 Items List</p>
+      <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Актуальный список товаров в наличии</h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="text-2xl mb-4">🪙</div>
-          <h3 class="text-white font-semibold text-base mb-2">Игровая Валюта</h3>
-          <p class="text-zinc-400 text-xs font-light leading-relaxed">Миллионы чистых, заработанных шекелей для моментального буста твоей экономики во второй части.</p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-white/[0.04] flex justify-between items-center text-xs">
-          <span class="text-zinc-500">Цена</span>
-          <span class="text-emerald-400 font-mono font-medium">Уточнять в TG</span>
-        </div>
-      </div>
-
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="text-2xl mb-4">🌱</div>
-          <h3 class="text-white font-semibold text-base mb-2">Экзотические Семена</h3>
-          <p class="text-zinc-400 text-xs font-light leading-relaxed">Лимитированные, золотые и древние семена редчайших культур для максимального дохода с грядок.</p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-white/[0.04] flex justify-between items-center text-xs">
-          <span class="text-zinc-500">Цена</span>
-          <span class="text-emerald-400 font-mono font-medium">Уточнять в TG</span>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 border-l-2 border-l-emerald-500">
+        <h3 class="text-white font-bold text-base mb-4 flex items-center gap-2">🪙 Игровые Шекели</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">10,000,000 Шекелей</span>
+            <span class="text-fuchsia-400 font-mono font-bold">150 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">50,000,000 Шекелей</span>
+            <span class="text-fuchsia-400 font-mono font-bold">600 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">100,000,000 Шекелей</span>
+            <span class="text-fuchsia-400 font-mono font-bold">1100 ⭐️</span>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="text-2xl mb-4">🐾</div>
-          <h3 class="text-white font-semibold text-base mb-2">Элитные Питомцы</h3>
-          <p class="text-zinc-400 text-xs font-light leading-relaxed">Мифические и неоновые стражи сада с колоссальными множителями сбора урожая и удачи.</p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-white/[0.04] flex justify-between items-center text-xs">
-          <span class="text-zinc-500">Цена</span>
-          <span class="text-emerald-400 font-mono font-medium">Уточнять в TG</span>
+      <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 border-l-2 border-l-fuchsia-500">
+        <h3 class="text-white font-bold text-base mb-4 flex items-center gap-2">🐾 Топовые Питомцы</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Единорог (Unicorn)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">350 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Енот (Raccoon)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">200 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Стрекоза (Dragonfly)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">180 ⭐️</span>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="text-2xl mb-4">💳</div>
-          <h3 class="text-white font-semibold text-base mb-2">Донат & Неймпасы</h3>
-          <p class="text-zinc-400 text-xs font-light leading-relaxed">Официальная покупка любых премиум-геймпассов (Авто-сбор, x2 Удача, VIP) и уникальных неймпасов.</p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-white/[0.04] flex justify-between items-center text-xs">
-          <span class="text-zinc-500">Цена</span>
-          <span class="text-emerald-400 font-mono font-medium">За Stars ⭐️</span>
+      <div class="bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 border-l-2 border-l-purple-500">
+        <h3 class="text-white font-bold text-base mb-4 flex items-center gap-2">🌱 Семена и Геймпассы</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Семена Бамбука (Пак)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">90 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Мифические Грибы (Пак)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">140 ⭐️</span>
+          </div>
+          <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-xl text-xs">
+            <span class="text-zinc-300">Геймпасс: Авто-сбор (Автовыдача)</span>
+            <span class="text-fuchsia-400 font-mono font-bold">450 ⭐️</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="escrow-rules" class="max-w-4xl mx-auto px-6 py-16 border-t border-white/[0.04]">
-    <div class="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-8 sm:p-12">
+  <section id="how-it-works" class="max-w-4xl mx-auto px-6 py-16 border-t border-white/[0.04]">
+    <div class="bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 sm:p-12 relative overflow-hidden">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-emerald-500 text-[10px] font-bold tracking-widest uppercase block mb-2">Escrow Verification Protocol</span>
-        <h2 class="text-white text-2xl sm:text-3xl font-bold tracking-tight">Как работает защищённая сделка?</h2>
+        <span class="text-fuchsia-500 text-[10px] font-bold tracking-widest uppercase block mb-2">Fast Delivery</span>
+        <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Как проходит покупка предметов?</h2>
       </div>
       
-      <div class="space-y-8 relative before:absolute before:inset-y-0 before:left-4 sm:before:left-1/2 before:w-[1px] before:bg-white/[0.06]">
-        <div class="flex flex-col sm:flex-row items-start gap-6 sm:gap-12 relative">
-          <div class="sm:w-1/2 sm:text-right order-2 sm:order-1">
-            <h4 class="text-white font-semibold text-sm mb-1">1. Инициация и Депонирование</h4>
-            <p class="text-zinc-400 text-xs font-light leading-relaxed">Покупатель передаёт оплату (Telegram Stars) на защищённый баланс гаранта @affow. Средства замораживаются протоколом.</p>
-          </div>
-          <div class="w-8 h-8 rounded-full bg-[#09090A] border border-white/[0.1] text-zinc-400 flex items-center justify-center text-xs font-bold order-1 sm:order-2 z-10">1</div>
-          <div class="sm:w-1/2 order-3"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 text-center">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20 flex items-center justify-center font-bold text-sm mx-auto mb-4">1</div>
+          <h4 class="text-white font-bold text-sm mb-2">Оплата заказа</h4>
+          <p class="text-zinc-400 text-xs font-light leading-relaxed">Ты переводишь нужное количество Telegram Stars в нашем официальном сообществе.</p>
         </div>
-
-        <div class="flex flex-col sm:flex-row items-start gap-6 sm:gap-12 relative">
-          <div class="sm:w-1/2 order-2 sm:order-1"></div>
-          <div class="w-8 h-8 rounded-full bg-[#09090A] border border-white/[0.1] text-zinc-400 flex items-center justify-center text-xs font-bold order-1 sm:order-2 z-10">2</div>
-          <div class="sm:w-1/2 order-3 text-left">
-            <h4 class="text-white font-semibold text-sm mb-1">2. Передача Внутриигрового Имущества</h4>
-            <p class="text-zinc-400 text-xs font-light leading-relaxed">Продавец, под наблюдением арбитра, передаёт шекели, петов или семена покупателю непосредственно внутри Grow a Garden 2.</p>
-          </div>
+        <div>
+          <div class="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center font-bold text-sm mx-auto mb-4">2</div>
+          <h4 class="text-white font-bold text-sm mb-2">Отправка по Почте</h4>
+          <p class="text-zinc-400 text-xs font-light leading-relaxed">Наш автоматический бот или менеджер мгновенно отправляет вещи через внутриигровую почту (Mailbox) на твой ник.</p>
         </div>
-
-        <div class="flex flex-col sm:flex-row items-start gap-6 sm:gap-12 relative">
-          <div class="sm:w-1/2 sm:text-right order-2 sm:order-1">
-            <h4 class="text-white font-semibold text-sm mb-1">3. Закрытие и Выпуск токена отзыва</h4>
-            <p class="text-zinc-400 text-xs font-light leading-relaxed">После подтверждения получения товара обеими сторонами, гарант переводит оплату продавцу. Система генерирует токен для публикации отзыва.</p>
-          </div>
-          <div class="w-8 h-8 rounded-full bg-[#09090A] border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xs font-bold order-1 sm:order-2 z-10">✓</div>
-          <div class="sm:w-1/2 order-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
-      <div>
-        <p class="text-zinc-500 text-[11px] font-bold tracking-widest uppercase mb-2">Ledger of Trust</p>
-        <h2 class="text-white text-2xl sm:text-3xl font-bold tracking-tight">Верифицированная база отзывов</h2>
-      </div>
-      <div class="bg-white/[0.02] border border-white/[0.06] px-4 py-2 rounded-xl text-xs text-zinc-400 font-medium">
-        Всего проверенных транзакций: <span id="total-reviews-count" class="text-white font-bold font-mono">384</span>
-      </div>
-    </div>
-
-    <div class="bg-amber-500/5 border border-amber-500/10 rounded-2xl p-4 mb-8 flex items-center gap-4 text-xs text-amber-200/80 max-w-3xl">
-      <span class="text-base">🔒</span>
-      <p>Публикация отзывов профанами или сторонними лицами невозможна. Кнопка создания отзыва активируется строго по зашифрованному токену транзакции после обоюдного закрытия ордера в присутствии гаранта <span class="text-white font-medium">@affow</span>.</p>
-    </div>
-
-    <div id="reviews-container" class="pinterest-grid">
-      <div class="review-card bg-white/[0.02] border border-white/[0.06] rounded-xl p-5">
-        <div class="flex justify-between items-center mb-3">
-          <span class="text-white font-medium text-xs">@roblox_king99</span>
-          <span class="text-zinc-500 text-[10px] font-mono">Вчера, 18:42</span>
-        </div>
-        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«Проводили обмен 20кк шекелей на Донат-неймпас через Аффоу. Всё супер быстро, гарант держал средства до тех пор, пока я лично не подтвердил получение в игре. Максимальный респект за такой уровень!»</p>
-        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Ордер: #GG2-8931 (Шекели / Донат)</div>
-      </div>
-
-      <div class="review-card bg-white/[0.02] border border-white/[0.06] rounded-xl p-5">
-        <div class="flex justify-between items-center mb-3">
-          <span class="text-white font-medium text-xs">@scrypt_dev</span>
-          <span class="text-zinc-500 text-[10px] font-mono">Вчера, 14:15</span>
-        </div>
-        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«Купил сет Древних семян за ТГ Звезды напрямую. Боялся, что во второй части игры механика трейдов багнутая, но гарант всё проконтролировал. Буду брать ещё.»</p>
-        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Ордер: #GG2-8924 (Семена / Stars)</div>
-      </div>
-
-      <div class="review-card bg-white/[0.02] border border-white/[0.06] rounded-xl p-5">
-        <div class="flex justify-between items-center mb-3">
-          <span class="text-white font-medium text-xs">@flawless_fan</span>
-          <span class="text-zinc-500 text-[10px] font-mono">14 июня, 23:01</span>
-        </div>
-        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«Трейдили мифического пета-множителя. Сумма была приличная, без гаранта я бы точно не рискнул. @affow отработал как швейцарские часы. Рекомендую хаб.»</p>
-        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Ордер: #GG2-8902 (Питомцы)</div>
-      </div>
-    </div>
-
-    <div class="text-center mt-8">
-      <button id="load-more-btn" class="bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.06] text-white text-xs font-semibold px-6 py-3 rounded-xl transition-all">
-        Загрузить еще верифицированные отзывы (Показано: <span id="displayed-count">3</span> из 384)
-      </button>
-    </div>
-  </section>
-
-  <footer class="border-t border-white/[0.04] py-12 text-center bg-[#070708]">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
-      <p>&copy; 2026 GG2 OTC PLATFORM. Все транзакции защищены депонированием.</p>
-      <div class="flex gap-6">
-        <a href="https://t.me/affow" class="hover:text-zinc-400 transition-colors">Telegram Канал</a>
-        <a href="https://t.me/affow" class="hover:text-zinc-400 transition-colors">Поддержка</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const mockNicknames = [
-      '@winner_garden', '@roblox_trader', '@zen_grow2', '@shadow_farm', '@alpha_clover', 
-      '@melon_juice', '@cyber_seed', '@luxury_pet', '@star_buyer', '@secret_otc', 
-      '@garden_boss', '@trade_expert', '@crypto_shekel', '@gg2_farmer', '@infinite_harvest'
-    ];
-
-    const mockItems = [
-      'Купил 50кк шекелей через гаранта', 'Обменял лимитированного Неон-Пета', 
-      'Взял пак Элитных Древних семян за Stars', 'Покупка VIP-неймпаса и авто-сбора', 
-      'Безопасный обмен аккаунта с грядками', 'Сделка по покупке Золотых Фруктов'
-    ];
-
-    const mockTexts = [
-      'Всё прошло гладко. Продавец долго тупил, но Аффоу помог всё настроить и передать правильно.',
-      'Первый раз пользовался сервисом депонирования. Очень понятная и крутая система, ни единого риска.',
-      'Топовый гарант, секунда в секунду. Оплатил звездами, товар получил на аккаунт моментально.',
-      'Сделка на крупную сумму завершена. Деньги продавец получил только после того, как я всё заскринил.',
-      'Рекомендую этот OTC хаб. Быстро, официально, без лишней суеты и детских разводов.'
-    ];
-
-    let displayedReviews = 3;
-    const totalReviews = 384;
-    
-    const container = document.getElementById('reviews-container');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const displayedCountEl = document.getElementById('displayed-count');
-
-    loadMoreBtn.addEventListener('click', () => {
-      // Имитируем подгрузку пачки из 9 новых отзывов
-      for (let i = 0; i < 9; i++) {
-        if (displayedReviews >= totalReviews) {
-          loadMoreBtn.innerText = "Все верифицированные отзывы успешно загружены";
-          loadMoreBtn.disabled = true;
-          break;
-        }
-
-        const randomNick = mockNicknames[Math.floor(Math.random() * mockNicknames.length)] + Math.floor(Math.random() * 90 + 10);
-        const randomItem = mockItems[Math.floor(Math.random() * mockItems.length)];
-        const randomText = mockTexts[Math.floor(Math.random() * mockTexts.length)];
-        const randomOrder = Math.floor(Math.random() * 8000) + 1000;
-        const randomDay = Math.floor(Math.random() * 10) + 1;
-
-        const card = document.createElement('div');
-        card.className = 'review-card bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 opacity-0 transform translate-y-4 transition-all duration-500';
-        
-        card.innerHTML = `
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-white font-medium text-xs">${randomNick}</span>
-            <span class="text-zinc-500 text-[10px] font-mono">${randomDay} июня, в присутствии @affow</span>
-          </div>
-          <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«${randomText} ${randomItem}.»</p>
-          <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Ордер: #GG2-${randomOrder}</div>
-        `;
-
-        container.appendChild(card);
-        
-        // Плавный эффект появления в стиле Apple
-        setTimeout(() => {
-          card.classList.remove('opacity-0', 'translate-y-4');
-        }, i * 50);
-
-        displayedReviews++;
-      }
-
-      displayedCountEl.innerText = displayedReviews;
-    });
-  </script>
-</body>
-</html>
+        <div>
+          <div class="w-10 h-10 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center font-bold text-sm mx-auto mb-4">3</div>
+          <h4 class="text-white font-bold text-sm mb-2">Проверка и Отзыв</h4>
+          <p class="text-zinc-400 text-xs font-light leading-relaxed">Заходишь в игру, забираешь петов или шекели из
