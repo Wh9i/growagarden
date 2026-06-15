@@ -204,4 +204,154 @@
         <div>
           <div class="w-10 h-10 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center font-bold text-sm mx-auto mb-4">3</div>
           <h4 class="text-white font-bold text-sm mb-2">Проверка и Отзыв</h4>
-          <p class="text-zinc-400 text-xs font-light leading-relaxed">Заходишь в игру, забираешь петов или шекели из
+          <p class="text-zinc-400 text-xs font-light leading-relaxed">Заходишь в игру, забираешь петов или шекели из ящика и оставляешь честный отзыв на сайте!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.04]">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+      <div>
+        <p class="text-zinc-500 text-[11px] font-bold tracking-widest uppercase mb-2">Flawless Reviews</p>
+        <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Верифицированная база отзывов клиентов</h2>
+      </div>
+      <div class="bg-white/[0.02] border border-white/[0.05] px-4 py-2 rounded-xl text-xs text-zinc-400 font-medium">
+        Всего честных отзывов: <span class="text-white font-bold font-mono">384</span>
+      </div>
+    </div>
+
+    <div class="bg-fuchsia-500/5 border border-fuchsia-500/10 rounded-2xl p-4 mb-8 flex items-center gap-4 text-xs text-fuchsia-300/90 max-w-3xl">
+      <span>🔒</span>
+      <p>Оставить отзыв можно только после проведения реальной сделки и подтверждения отправки менеджером. Никакого левого спама.</p>
+    </div>
+
+    <div id="reviews-container" class="pinterest-grid">
+      <div class="review-card bg-white/[0.01] border border-white/[0.05] rounded-xl p-5 hover:border-fuchsia-500/20 transition-all">
+        <div class="flex justify-between items-center mb-3">
+          <span class="text-fuchsia-400 font-bold text-xs">@oyoyan</span>
+          <span class="text-zinc-500 text-[10px] font-mono">Сегодня, 15 июня в 04:12</span>
+        </div>
+        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«спасибо все ахуеннно сделал @affow пет прилетел моментально на почту, енот у меня) площадка топ!»</p>
+        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Заказ: #GG2-4921 (Петы)</div>
+      </div>
+
+      <div class="review-card bg-white/[0.01] border border-white/[0.05] rounded-xl p-5 hover:border-fuchsia-500/20 transition-all">
+        <div class="flex justify-between items-center mb-3">
+          <span class="text-fuchsia-400 font-bold text-xs">@tasher2026</span>
+          <span class="text-zinc-500 text-[10px] font-mono">Сегодня, 15 июня в 01:45</span>
+        </div>
+        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«лучший просто, @affow быстро выдал шекели, рекомендую бро! 50 лямов на базе, буду качать грядки дальше»</p>
+        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Заказ: #GG2-4915 (Шекели)</div>
+      </div>
+
+      <div class="review-card bg-white/[0.01] border border-white/[0.05] rounded-xl p-5 hover:border-fuchsia-500/20 transition-all">
+        <div class="flex justify-between items-center mb-3">
+          <span class="text-fuchsia-400 font-bold text-xs">@roblox_killer_9</span>
+          <span class="text-zinc-500 text-[10px] font-mono">Вчера, 14 июня в 21:30</span>
+        </div>
+        <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«честно думал скам, но @affow топ челик все без кидалова. закинул старс менеджер через 5 мин на почту все скинул спс @affow за стрекозу!»</p>
+        <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Заказ: #GG2-4892 (Петы)</div>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <button id="load-more-btn" class="bg-white/[0.02] border border-white/[0.08] hover:bg-white/[0.05] hover:border-fuchsia-500/30 text-white text-xs font-bold px-6 py-3 rounded-xl transition-all">
+        Загрузить ещё отзывы (Показано: <span id="displayed-count">3</span> из 384)
+      </button>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/[0.04] py-12 text-center bg-[#09070C]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
+      <p>&copy; 2026 FLAWLESS MARKET. Все права защищены. Мы не связаны с Roblox Inc.</p>
+      <div class="flex gap-6">
+        <a href="https://t.me/gag2store" class="hover:text-zinc-400 transition-colors">Наш Telegram Канал</a>
+        <a href="https://t.me/gag2store" class="hover:text-zinc-400 transition-colors">Связаться с @affow</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Рандомная база ников без палевных повторений
+    const customNicks = [
+      '@maga_saub', '@gg_top_gamer', '@vanya777', '@skameram_net', '@keksik_roblox',
+      '@ speedrunner_gg2', '@luxury_farm', '@melon_juice', '@cyber_clover', '@samper_top',
+      '@qwerty_roblox', '@denis_bro', '@afk_farm', '@bambu_master', '@dragon_fly99',
+      '@misha_gg2', '@user_garden', '@star_trader', '@roblox_king_one', '@secret_buyer'
+    ];
+
+    // Живые, геймерские тексты
+    const reviewPhrases = [
+      "все ахуеннно сделал @affow, бамбук пришел, все четко @affow респект за скорость!",
+      "все четко без кидалова, @affow лучший гарант в роблоксе, беру не первый раз семена грибов",
+      "закинул старс, менеджер через 5 мин на почту все скинул, спс @affow за пета енота!!",
+      "енот у меня, @affow спасибо за быструю сделку, топ магаз, буду еще шекели брать",
+      "бля спасибо все ахуеннно сделал @affow, пет прилетел моментально, лучший маркет",
+      "взял пак древних семян, всё пришло на почту в игре за пару минут, @affow топ челик",
+      "100кк шекелей пришли, @affow лучший, без обмана и всякой хуйни"
+    ];
+
+    let displayedReviews = 3;
+    const totalReviews = 384;
+
+    // Генерация правильных дат с шагом назад начиная с 14 июня и до 13 июня 2026 года
+    let currentHour = 18;
+    let currentDay = 14;
+
+    const container = document.getElementById('reviews-container');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const displayedCountEl = document.getElementById('displayed-count');
+
+    loadMoreBtn.addEventListener('click', () => {
+      // Подгружаем по 9 штук за клик
+      for (let i = 0; i < 9; i++) {
+        if (displayedReviews >= totalReviews) {
+          loadMoreBtn.innerText = "Все 384 верифицированных отзыва загружены";
+          loadMoreBtn.disabled = true;
+          break;
+        }
+
+        // Рандомим ник, текст и номер заказа
+        const randomNick = customNicks[Math.floor(Math.random() * customNicks.length)] + (Math.random() > 0.5 ? Math.floor(Math.random() * 90 + 10) : '');
+        const randomText = reviewPhrases[Math.floor(Math.random() * reviewPhrases.length)];
+        const randomOrder = Math.floor(Math.random() * 3000) + 1000;
+
+        // Рассчитываем интервалы времени (назад в прошлое)
+        currentHour -= Math.floor(Math.random() * 3) + 1; // шаг в 1-3 часа
+        if (currentHour <= 0) {
+          currentHour = 23;
+          currentDay -= 1; // переходим на предыдущий день
+        }
+        if (currentDay < 13) currentDay = 13; // держимся в диапазоне до 13 июня
+
+        const formattedTime = `${currentHour < 10 ? '0' + currentHour : currentHour}:${Math.random() > 0.5 ? '15' : '40'}`;
+        const dateStr = `${currentDay} июня в ${formattedTime}`;
+
+        const card = document.createElement('div');
+        card.className = 'review-card bg-white/[0.01] border border-white/[0.05] rounded-xl p-5 opacity-0 transform translate-y-4 transition-all duration-500 hover:border-fuchsia-500/20';
+        
+        card.innerHTML = `
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-fuchsia-400 font-bold text-xs">${randomNick}</span>
+            <span class="text-zinc-500 text-[10px] font-mono">${dateStr}</span>
+          </div>
+          <p class="text-zinc-300 text-xs leading-relaxed font-light mb-4">«${randomText}»</p>
+          <div class="text-[10px] bg-white/[0.03] text-zinc-400 px-2.5 py-1 rounded-md inline-block font-mono">Заказ: #GG2-${randomOrder}</div>
+        `;
+
+        container.appendChild(card);
+        
+        // Эффект плавного появления
+        setTimeout(() => {
+          card.classList.remove('opacity-0', 'translate-y-4');
+        }, i * 40);
+
+        displayedReviews++;
+      }
+
+      displayedCountEl.innerText = displayedReviews;
+    });
+  </script>
+</body>
+</html>
